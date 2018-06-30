@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="btn_a"> A </string>
+    <string name="btn_aminus"> A- </string>
+    <string name="btn_bplus"> B+ </string>
+    <string name="btn_b"> B </string>
+    <string name="btn_bminus"> B- </string>
+    <string name="btn_cplus"> C+ </string>
+    <string name="btn_c"> C </string>
+    <string name="btn_cminus"> C- </string>
+    <string name="btn_dplus"> D+ </string>
+    <string name="btn_d"> D </string>
+    <string name="btn_e"> E </string>
+    <string name="btn_f"> F </string>
+</resources>
