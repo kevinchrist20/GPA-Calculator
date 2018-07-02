@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_grade, btn_a, btn_aminus, btn_bplus, btn_b, btn_bminus, btn_cplus, btn_c, btn_cminus;
     Button btn_dplus, btn_d, btn_e, btn_f, btn_cls, btn_back;
-    EditText grade_results;
+    EditText grade_cal;
+    TextView grade_results;
 
     static int num_courses = 0;
     static float total_points = 0;
@@ -39,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btn_f = findViewById(R.id.fail);
         btn_grade = findViewById(R.id.calculate);
         btn_cls = findViewById(R.id.clear);
-        grade_results = findViewById(R.id.showresults);
+        grade_cal = findViewById(R.id.showcal);
+        grade_results = findViewById(R.id.results);
 
 
         final HashMap<String, Float> grade_scale = new HashMap<>();
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         grade_scale.put("E", (float) 1.0);
         grade_scale.put("F", (float) 0.0);
 
-        grade_results.setText("");
+        grade_cal.setText("");
 
 
         btn_a.setOnClickListener(new View.OnClickListener() {
@@ -64,14 +66,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_a.getText());
 
-                if(grade_results.getText().length() == 0) {
+                if(grade_cal.getText().length() == 0) {
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -81,14 +83,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_aminus.getText());
 
-                if(grade_results.getText().length() == 0) {
+                if(grade_cal.getText().length() == 0) {
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -98,14 +100,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_bplus.getText());
 
-                if (grade_results.getText().length() == 0) {
+                if (grade_cal.getText().length() == 0) {
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else {
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -115,14 +117,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_b.getText());
 
-                if (grade_results.getText().length() == 0) {
+                if (grade_cal.getText().length() == 0) {
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -132,14 +134,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_bminus.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
 
             }
@@ -150,14 +152,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_cplus.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -167,14 +169,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_c.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -184,14 +186,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_cminus.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -201,14 +203,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_dplus.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -218,14 +220,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_d.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -235,14 +237,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_e.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }            }
         });
 
@@ -251,14 +253,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 float grade = grade_scale.get(btn_f.getText());
 
-                if (grade_results.getText().length() == 0){
+                if (grade_cal.getText().length() == 0){
                     num_courses ++;
                     total_points = total_points + grade;
-                    grade_results.setText(grade + "");
+                    grade_cal.setText(grade + "");
                 }else{
                     num_courses++;
                     total_points = total_points + grade;
-                    grade_results.append( " + " + grade + "");
+                    grade_cal.append( " + " + grade + "");
                 }
             }
         });
@@ -275,6 +277,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                grade_cal.setText("");
                 grade_results.setText("");
                 total_points = 0;
                 num_courses = 0;
