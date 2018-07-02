@@ -62,120 +62,204 @@ public class MainActivity extends AppCompatActivity {
         btn_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_a.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_a.getText());
-                grade_results.setText(total_points + "");
+                if(grade_results.getText().length() == 0) {
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_aminus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_aminus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_aminus.getText());
-                grade_results.setText(total_points + "");
+                if(grade_results.getText().length() == 0) {
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_bplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_bplus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_bplus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0) {
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else {
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_b.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_b.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0) {
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_bminus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_bminus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_bminus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
+
             }
         });
 
         btn_cplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_cplus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_cplus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_c.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_c.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_cminus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_cminus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_cminus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_dplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_dplus.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_dplus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_d.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_dplus.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
         btn_e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_e.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_e.getText());
-                grade_results.setText(total_points + "");
-            }
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }            }
         });
 
         btn_f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                float grade = grade_scale.get(btn_f.getText());
 
-                num_courses ++;
-                total_points = total_points + grade_scale.get(btn_a.getText());
-                grade_results.setText(total_points + "");
+                if (grade_results.getText().length() == 0){
+                    num_courses ++;
+                    total_points = total_points + grade;
+                    grade_results.setText(grade + "");
+                }else{
+                    num_courses++;
+                    total_points = total_points + grade;
+                    grade_results.append( " + " + grade + "");
+                }
             }
         });
 
