@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btn_f = findViewById(R.id.fail);
         btn_grade = findViewById(R.id.calculate);
         btn_cls = findViewById(R.id.clear);
+        btn_back = findViewById(R.id.backspace);
         grade_cal = findViewById(R.id.showcal);
         grade_results = findViewById(R.id.results);
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         grade_scale.put("E", (float) 1.0);
         grade_scale.put("F", (float) 0.0);
 
-        grade_cal.setText("");
+        grade_cal.setText(null);
 
 
         btn_a.setOnClickListener(new View.OnClickListener() {
@@ -265,11 +266,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(grade_cal.getText().length() > 0){
+                    CharSequence num = grade_cal.getText().toString();
+                    grade_cal.setText(num.subSequence(0, num.length() - 1));
+
+                    //Get grade and subtract from total_points and reduce num of courses.
+                    num_courses --;
+                    String cls = (String) num.subSequence(0, num.length() - 1);
+                }
+            }
+        });
+
         btn_grade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                total_points = total_points / num_courses;
-                grade_results.setText(total_points + "");
+                if (grade_cal.getText().length() > 0) {
+                    total_points = total_points / num_courses;
+                    grade_results.setText(total_points + "");
+                }
             }
         });
 
@@ -277,8 +294,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                grade_cal.setText("");
-                grade_results.setText("");
+                grade_cal.setText(null);
+                grade_results.setText(null);
                 total_points = 0;
                 num_courses = 0;
             }
