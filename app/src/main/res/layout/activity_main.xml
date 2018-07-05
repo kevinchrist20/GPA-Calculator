@@ -36,180 +36,156 @@
 
     </LinearLayout>
 
-    <TableLayout
+    <RelativeLayout
         android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_below="@+id/linearlayout">
 
-        <TableRow
-            android:id="@+id/row1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
->
+        <Button
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/btn_a" />
 
-            <Button
-                android:id="@+id/a"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_a"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"
-                />
+        <Button
+            android:id="@+id/a_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/btn_aminus" />
 
-            <Button
-                android:id="@+id/a_minus"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_aminus"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/b_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/btn_bplus" />
 
-            <Button
-                android:id="@+id/b_plus"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_bplus"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/a"
+            android:text="@string/btn_b" />
 
-            <Button
-                android:id="@+id/b"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_b"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/c"
+            android:text="@string/grade"
+            android:textColor="#fff" />
 
-            <Button
-                android:id="@+id/calculate"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_results"
-                android:text="@string/grade"
-                android:textColor="#fff"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
-        </TableRow>
+        <Button
+            android:id="@+id/b_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/a_minus"
+            android:layout_alignLeft="@+id/a_minus"
+            android:layout_below="@+id/a"
+            android:text="@string/btn_bminus" />
 
-        <TableRow
-            android:id="@+id/row2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/c_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/b_plus"
+            android:layout_alignLeft="@id/b_plus"
+            android:layout_below="@+id/a"
+            android:text="@string/btn_cplus" />
 
-            <Button
-                android:id="@+id/b_minus"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="@string/btn_bminus" />
+        <Button
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="103dp"
+            android:text="@string/btn_c" />
 
-            <Button
-                android:id="@+id/c_plus"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_cplus"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/c_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/a_minus"
+            android:layout_alignLeft="@id/a_minus"
+            android:layout_alignTop="@+id/calculate"
+            android:text="@string/btn_cminus" />
 
-            <Button
-                android:id="@+id/c"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_c"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/a"
+            android:text="@string/clear"
+            android:textColor="#fff" />
 
-            <Button
-                android:id="@+id/c_minus"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_cminus"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"
-                />
 
-            <Button
-                android:id="@+id/clear"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="@string/clear"
-                android:background="@drawable/button_ac"
-                android:textColor="#fff"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/d_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/b_plus"
+            android:layout_alignLeft="@id/b_plus"
+            android:layout_alignTop="@+id/calculate"
+            android:text="@string/btn_dplus" />
 
-        </TableRow>
+        <Button
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="136dp"
+            android:text="@string/btn_d" />
 
-        <TableRow
-            android:id="@+id/row3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <Button
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/a_minus"
+            android:layout_alignLeft="@id/a_minus"
+            android:layout_alignTop="@+id/d"
+            android:text="@string/btn_e" />
 
-            android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/b_plus"
+            android:layout_alignLeft="@id/b_plus"
+            android:layout_alignTop="@+id/d"
+            android:text="@string/btn_f" />
 
-            <Button
-                android:id="@+id/d_plus"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_dplus"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
+        <Button
+            android:id="@+id/backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:drawableEnd="@drawable/ic_backspace_black_24dp"
+            android:drawableRight="@drawable/ic_backspace_black_24dp"
+            android:layout_alignParentRight="true" />
 
-            <Button
-                android:id="@+id/d"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_d"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <Button
-                android:id="@+id/e"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_e"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <Button
-                android:id="@+id/fail"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_white"
-                android:text="@string/btn_f"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <Button
-                android:id="@+id/backspace"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_back"
-                android:drawableEnd="@drawable/ic_backspace_black_24dp"
-                android:drawableRight="@drawable/ic_backspace_black_24dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp" />
-
-        </TableRow>
-    </TableLayout>
+    </RelativeLayout>
 </RelativeLayout>
