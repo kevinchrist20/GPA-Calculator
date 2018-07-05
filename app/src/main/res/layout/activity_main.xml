@@ -21,7 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="19dp"
             android:enabled="false"
+            android:inputType="numberDecimal"
             android:lines="2"
+            android:textColor="#000000"
             android:maxLines="5"
             android:textSize="20sp" />
 
@@ -49,7 +51,14 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:text="@string/btn_a" />
+            android:text="@string/btn_a"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"
+            android:layout_toEndOf="@id/a_minus"
+            android:layout_toRightOf="@id/a_minus"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp" />
 
         <Button
             android:id="@+id/a_minus"
@@ -60,7 +69,10 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="100dp"
             android:layout_marginStart="100dp"
-            android:text="@string/btn_aminus" />
+            android:text="@string/btn_aminus"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"/>
 
         <Button
             android:id="@+id/b_plus"
@@ -71,7 +83,12 @@
             android:layout_alignParentTop="true"
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
-            android:text="@string/btn_bplus" />
+            android:text="@string/btn_bplus"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"
+            android:layout_toStartOf="@id/backspace"
+            android:layout_toLeftOf="@id/backspace" />
 
         <Button
             android:id="@+id/b"
@@ -80,7 +97,13 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/a"
-            android:text="@string/btn_b" />
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_b"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"/>
 
         <Button
             android:id="@+id/calculate"
@@ -90,7 +113,13 @@
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/c"
             android:text="@string/grade"
-            android:textColor="#fff" />
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@color/grade_color"
+            android:layout_toStartOf="@id/d_plus"
+            android:layout_toLeftOf="@id/d_plus"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp" />
 
         <Button
             android:id="@+id/b_minus"
@@ -98,8 +127,11 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/a_minus"
             android:layout_alignLeft="@+id/a_minus"
-            android:layout_below="@+id/a"
-            android:text="@string/btn_bminus" />
+            android:layout_alignTop="@id/b"
+            android:text="@string/btn_bminus"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"/>
 
         <Button
             android:id="@+id/c_plus"
@@ -107,8 +139,11 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/b_plus"
             android:layout_alignLeft="@id/b_plus"
-            android:layout_below="@+id/a"
-            android:text="@string/btn_cplus" />
+            android:layout_alignTop="@id/b"
+            android:text="@string/btn_cplus"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"/>
 
         <Button
             android:id="@+id/c"
@@ -117,8 +152,13 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="103dp"
-            android:text="@string/btn_c" />
+            android:layout_marginTop="115dp"
+            android:text="@string/btn_c"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"/>
 
         <Button
             android:id="@+id/c_minus"
@@ -127,7 +167,10 @@
             android:layout_alignStart="@+id/a_minus"
             android:layout_alignLeft="@id/a_minus"
             android:layout_alignTop="@+id/calculate"
-            android:text="@string/btn_cminus" />
+            android:text="@string/btn_cminus"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"/>
 
         <Button
             android:id="@+id/clear"
@@ -135,9 +178,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/a"
+            android:layout_alignTop="@id/b"
             android:text="@string/clear"
-            android:textColor="#fff" />
+            android:background="@color/clear"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
 
 
         <Button
@@ -147,7 +194,10 @@
             android:layout_alignStart="@+id/b_plus"
             android:layout_alignLeft="@id/b_plus"
             android:layout_alignTop="@+id/calculate"
-            android:text="@string/btn_dplus" />
+            android:text="@string/btn_dplus"
+            android:background="@color/icons"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/d"
@@ -156,8 +206,13 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="136dp"
-            android:text="@string/btn_d" />
+            android:layout_marginBottom="145dp"
+            android:text="@string/btn_d"
+            android:background="@color/icons"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/e"
@@ -166,7 +221,10 @@
             android:layout_alignStart="@+id/a_minus"
             android:layout_alignLeft="@id/a_minus"
             android:layout_alignTop="@+id/d"
-            android:text="@string/btn_e" />
+            android:text="@string/btn_e"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons"/>
 
         <Button
             android:id="@+id/fail"
@@ -175,7 +233,10 @@
             android:layout_alignStart="@+id/b_plus"
             android:layout_alignLeft="@id/b_plus"
             android:layout_alignTop="@+id/d"
-            android:text="@string/btn_f" />
+            android:text="@string/btn_f"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/icons" />
 
         <Button
             android:id="@+id/backspace"
@@ -183,9 +244,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:drawableEnd="@drawable/ic_backspace_black_24dp"
-            android:drawableRight="@drawable/ic_backspace_black_24dp"
-            android:layout_alignParentRight="true" />
+            android:background="@color/back"
+            android:text="<-"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp" />
 
     </RelativeLayout>
 </RelativeLayout>
