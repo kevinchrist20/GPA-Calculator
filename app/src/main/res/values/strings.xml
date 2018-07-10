@@ -12,6 +12,6 @@
     <string name="btn_d"> D </string>
     <string name="btn_e"> E </string>
     <string name="btn_f"> F </string>
-    <string name="grade"> = </string>
+    <string name="grade"> ANS </string>
     <string name="clear">AC</string>
 </resources>
