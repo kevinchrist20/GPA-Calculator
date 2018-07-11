@@ -22,7 +22,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="19dp"
             android:enabled="false"
-            android:inputType="numberDecimal"
             android:lines="2"
             android:textColor="#000000"
             android:maxLines="5"
